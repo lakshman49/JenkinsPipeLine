@@ -17,5 +17,10 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+		stage('Email Notification'){
+			steps{
+			echo 'Build Deployment Done'
+			}
+		}
     }
 }
