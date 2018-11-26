@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/javahometech/my-app'
+     git 'https://github.com/lakshman49/my-app'
    }
    stage('Compile-Package'){
       // Get maven home path
@@ -17,7 +17,7 @@ node{
        channel: '#jenkins-pipeline-demo',
        color: 'good', 
        message: 'Welcome to Jenkins, Slack!', 
-       teamDomain: 'javahomecloud',
+       teamDomain: 'lakshman49',
        tokenCredentialId: 'slack-demo'
    }
 }
